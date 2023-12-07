@@ -1,4 +1,5 @@
 import { config } from "../../../config";
+import { Button } from "../Button";
 
 export const Hero = () => {
   const { title, subTitle, navigation, heroCTA } = config;
@@ -25,7 +26,7 @@ export const Hero = () => {
             </li>
           ))}
         </ul>
-        {heroCTA}
+        <Button onClick={() => {}}>{heroCTA}</Button>
       </div>
     </section>
   );
