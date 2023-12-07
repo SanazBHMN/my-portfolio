@@ -1,3 +1,32 @@
+import { config } from "../../../config";
+
 export const Hero = () => {
-  return <h1>Hero</h1>;
+  const { title, subTitle, navigation, heroCTA } = config;
+
+  return (
+    <section className="hero">
+      <div className="container">
+        <div className="logo">
+          <img src="/assets/img/logo.svg" alt="logo" width="75" height="30" />
+        </div>
+        <h1 dangerouslySetInnerHTML={{ __html: title }} />
+        <strong>{subTitle}</strong>
+
+        <div className="hamburger">
+          <span className="slice"></span>
+          <span className="slice"></span>
+          <span className="slice"></span>
+          <span className="slice"></span>
+        </div>
+        <ul className="menu">
+          {navigation.map((link, index) => (
+            <li className="menu-item" key={index}>
+              {link}
+            </li>
+          ))}
+        </ul>
+        {heroCTA}
+      </div>
+    </section>
+  );
 };
