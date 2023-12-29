@@ -50,3 +50,66 @@
     font-size: 48px;
   }
 }
+
+.hamburger {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 40px;
+  height: 25px;
+  user-select: none;
+  cursor: pointer;
+  z-index: 1;
+
+  &.animate-in .slice {
+    opacity: 0;
+    animation: MenuSlideIn 0.6s $easing forwards;
+  }
+
+  .slice {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: $radius;
+    background: $white;
+    transition: all 0.3s $easing;
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 45%;
+      animation-delay: 0.2s;
+    }
+
+    &:last-child {
+      bottom: 0;
+      animation-delay: 0.4s;
+    }
+  }
+
+  &.close {
+    .slice:first-child,
+    .slice:last-child {
+      opacity: 0;
+    }
+
+    .slice:first-child {
+      transform: translateY(20px) scale(0);
+    }
+
+    .slice:last-child {
+      transform: translateY(-20px) scale(0);
+    }
+
+    .slice:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    .slice:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
