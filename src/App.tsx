@@ -1,14 +1,14 @@
 // components
 import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
 // styles
 import "./App.css";
-import HeroSection from "./components/HeroSection";
 
 function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      <Portfolio />
     </>
   );
 }
