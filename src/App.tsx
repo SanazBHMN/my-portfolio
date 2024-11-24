@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+// components
+import Navbar from "./components/Navbar";
+// styles
 import "./App.css";
 
 function App() {
   return (
     <>
-      <FontAwesomeIcon icon={faHouse} />
-      <p className="text-3xl font-bold underline text-red-500">Hello World!</p>
+      <Navbar />
     </>
   );
 }
