@@ -1,4 +1,4 @@
-import myPhoto from "../../public/photo.jpg";
+import myPhoto from "../assets/photo.jpg";
 
 function Image() {
   return (
