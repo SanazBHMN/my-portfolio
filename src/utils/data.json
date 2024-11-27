@@ -1,0 +1,24 @@
+{
+    "navLinks": [
+        {
+            "id": 1,
+            "text": "about"
+        },
+        {
+            "id": 2,
+            "text": "projects"
+        },
+        {
+            "id": 3,
+            "text": "experience"
+        },
+        {
+            "id": 4,
+            "text": "skills"
+        },
+        {
+            "id": 5,
+            "text": "contact"
+        }
+    ]
+}

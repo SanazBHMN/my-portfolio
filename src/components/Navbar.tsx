@@ -1,23 +1,21 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+// icons
+import { faMoon, faBars } from "@fortawesome/free-solid-svg-icons";
 // componets
+import IconButton from "./IconButton";
+import NavbarLinks from "./NavbarLinks";
+// statics
 import Logo from "./Logo";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-baseline px-[120px] py-10">
+    <nav className="flex justify-between items-baseline text-primary">
       <Logo />
-      <div className="flex justify-center items-baseline gap-10 text-primary border border-primary rounded-full px-5 py-4">
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/experience">Experience</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/contact">Contact</Link>
+      <div className="flex justify-center gap-6">
+        <IconButton icon={faBars} style="sm:hidden" />
+        {/* TODO: NavbarLinks must stay in the middle when it's displayed */}
+        <NavbarLinks />
+        <IconButton icon={faMoon} size="lg" />
       </div>
-      <button>
-        <FontAwesomeIcon icon={faMoon} size="lg" className="text-primary" />
-      </button>
     </nav>
   );
 }
