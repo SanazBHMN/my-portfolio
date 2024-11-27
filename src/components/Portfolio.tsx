@@ -2,6 +2,7 @@
 import HeroSection from "./HeroSection";
 import About from "./About";
 import Skills from "./Skills";
+import ContactMe from "./ContactMe";
 
 function Portfolio() {
   return (
@@ -9,6 +10,7 @@ function Portfolio() {
       <HeroSection />
       <About />
       <Skills />
+      <ContactMe />
     </div>
   );
 }
