@@ -15,7 +15,7 @@ function Drawer({ onButtonClick }: DrawerProps) {
 
   return (
     <>
-      <div className="absolute left-3 right-9 top-[50px] flex flex-col justify-center items-baseline gap-2 capitalize border border-primary rounded-xl px-5 py-4">
+      <div className="absolute left-3 right-9 z-50 bg-white top-[50px] flex flex-col justify-center items-baseline gap-2 capitalize border border-primary rounded-xl px-5 py-4">
         <IconButton icon={faXmark} onButtonClick={onButtonClick} />
         <ul className="flex flex-col justify-center items-baseline gap-6">
           {navLinks.map((link) => (

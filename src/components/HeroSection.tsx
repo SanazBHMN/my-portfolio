@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import IconButton from "./IconButton";
 
 function HeroSection() {
   return (
@@ -9,14 +9,13 @@ function HeroSection() {
         I'm Sanaz
       </h1>
       <h3 className="my-4">Frontend Developer</h3>
-      <button className="flex justify-center items-center gap-2 border border-primary text-primary font-bold px-5 py-2 rounded-full">
-        Contact Me
-        <FontAwesomeIcon
-          icon={faAngleRight}
-          size="sm"
-          className="bg-primary text-white rounded-md px-2 py-1"
-        />
-      </button>
+      <IconButton
+        text="Contact Me"
+        icon={faAngleRight}
+        size="sm"
+        buttonStyle="flex justify-center items-center gap-2 border border-primary text-primary font-bold px-5 py-2 rounded-full"
+        iconStyle="bg-primary text-white rounded-md px-2 py-1"
+      />
     </div>
   );
 }

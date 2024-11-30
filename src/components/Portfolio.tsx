@@ -6,11 +6,11 @@ import ContactMe from "./ContactMe";
 
 function Portfolio() {
   return (
-    <div className="w-10/12 mx-auto flex flex-col gap-36">
+    <div className="flex flex-col gap-12 my-12">
       <HeroSection />
       <About />
-      <Skills />
-      <ContactMe />
+      {/* <Skills />
+      <ContactMe /> */}
     </div>
   );
 }

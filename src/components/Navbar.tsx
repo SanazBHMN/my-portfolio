@@ -30,7 +30,7 @@ function Navbar() {
       <div className="flex justify-center gap-6">
         <IconButton
           icon={faBars}
-          style="sm:hidden"
+          buttonStyle="sm:hidden"
           onButtonClick={handleOpenNavbar}
         />
         {/* TODO: NavbarLinks must stay in the middle when it's displayed */}
