@@ -3,8 +3,6 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 // styles
 import "./App.css";
-import { NavLink } from "react-router-dom";
-import NavLinks from "./components/NavbarLinks";
 
 function App() {
   return (

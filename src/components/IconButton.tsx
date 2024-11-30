@@ -5,11 +5,12 @@ interface IconButtonProps {
   icon: IconDefinition;
   size?: SizeProp;
   style?: string;
+  onButtonClick?: () => void;
 }
 
-function IconButton({ icon, size, style }: IconButtonProps) {
+function IconButton({ icon, size, style, onButtonClick }: IconButtonProps) {
   return (
-    <button className={`${style}`}>
+    <button className={`${style}`} onClick={onButtonClick}>
       <FontAwesomeIcon icon={icon} size={size} />
     </button>
   );
