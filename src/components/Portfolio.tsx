@@ -9,8 +9,8 @@ function Portfolio() {
     <div className="flex flex-col gap-12 my-12">
       <HeroSection />
       <About />
-      {/* <Skills />
-      <ContactMe /> */}
+      <Skills />
+      {/* <ContactMe /> */}
     </div>
   );
 }
