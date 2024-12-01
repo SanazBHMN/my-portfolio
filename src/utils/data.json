@@ -24,43 +24,53 @@
     "skills": [
         {
             "id": 1,
-            "name": "HTML"
+            "name": "HTML",
+            "icon": "html"
         },
         {
             "id": 2,
-            "name": "CSS"
+            "name": "CSS",
+            "icon": "css"
         },
         {
             "id": 3,
-            "name": "JavaScript"
+            "name": "JavaScript",
+            "icon": "js"
         },
         {
             "id": 4,
-            "name": "React"
+            "name": "React",
+            "icon": "react"
         },
         {
             "id": 5,
-            "name": "Vue"
+            "name": "Vue",
+            "icon": "vue"
         },
         {
             "id": 6,
-            "name": "MUI"
+            "name": "MUI",
+            "icon": "mui"
         },
         {
             "id": 7,
-            "name": "Bootstrap"
+            "name": "Bootstrap",
+            "icon": "bootstrap"
         },
         {
             "id": 8,
-            "name": "Tailwind"
+            "name": "Tailwind",
+            "icon": "tailwind"
         },
         {
             "id": 9,
-            "name": "Next.js"
+            "name": "Next.js",
+            "icon": "next"
         },
         {
             "id": 10,
-            "name": "Github"
+            "name": "Github",
+            "icon": "github"
         }
     ]
 }
